@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class ArrayUtils {
+public class ArrayUtilsMedium {
 
   public static List<Integer> circularArrayRotation(List<Integer> a, int k, List<Integer> queries) {
     return queries.stream()

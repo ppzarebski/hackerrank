@@ -1,6 +1,6 @@
 package com.github.ppzarebski.hackerrank.tests.problemsolving.medium;
 
-import com.github.ppzarebski.hackerrank.problemsolving.medium.ArrayUtils;
+import com.github.ppzarebski.hackerrank.problemsolving.medium.ArrayUtilsMedium;
 import org.apache.commons.lang3.tuple.Pair;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -18,14 +18,14 @@ import java.util.stream.Stream;
 
 import static com.google.common.truth.Truth.assertThat;
 
-public class ArraysTest {
+public class ArraysMediumTest {
 
   @ParameterizedTest(name = "size: {0}")
   @MethodSource("provideCircularArrayRotationCases")
   void circularArrayRotationTest(int size, List<Integer> array, int rotationsCount,
                                  List<Integer> queryIndexes, List<Integer> expected) {
     //when
-    var result = ArrayUtils.circularArrayRotation(array, rotationsCount, queryIndexes);
+    var result = ArrayUtilsMedium.circularArrayRotation(array, rotationsCount, queryIndexes);
 
     System.out.println(result);
     //then
@@ -50,7 +50,7 @@ public class ArraysTest {
   @MethodSource("provideArrayGameCases")
   void arrayGameTest(int size, int leap, List<Integer> arr, boolean expected) {
     //when
-    var result = ArrayUtils.arrayGame(leap, arr);
+    var result = ArrayUtilsMedium.arrayGame(leap, arr);
 
     System.out.println(result);
     //then
@@ -80,7 +80,7 @@ public class ArraysTest {
   @MethodSource("provideArrayGameCasesFromFile")
   void arrayGameFromFileTest(int caseNo, int size, int leap, List<Integer> arr, String expected) {
     //when
-    var result = ArrayUtils.arrayGame(leap, arr);
+    var result = ArrayUtilsMedium.arrayGame(leap, arr);
 
     System.out.println(result);
     //then
