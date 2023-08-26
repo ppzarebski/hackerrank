@@ -4,13 +4,15 @@
 
   <groupId>org.example</groupId>
   <artifactId>hackerrank</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>hackerrank</name>
 
   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>19</java.version>
+
     <junit.version>5.10.0</junit.version>
     <apache.commons>3.13.0</apache.commons>
     <google.truth.version>1.1.5</google.truth.version>
